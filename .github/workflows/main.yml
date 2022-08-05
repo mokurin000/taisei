@@ -70,10 +70,10 @@ jobs:
       run: |
         meson compile -C build/ --verbose
         meson install -C build/
-        tar -cf win.tar build/src
+        tar -cf win.tar build
 
     - name: Upload release
       uses: actions/upload-artifact@v2
       with:
-        name: taisei_windows_fail_log
+        name: taisei_windows_build
         path: win.tar
