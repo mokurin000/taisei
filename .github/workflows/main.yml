@@ -77,4 +77,3 @@ jobs:
       with:
         name: taisei_windows_fail_log
         path: win.tar
-        if-no-files-found: warn
